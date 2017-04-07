@@ -37,7 +37,11 @@ var YD = new YoutubeMp3Downloader({
     "outputPath": "/path/to/mp3/folder",    // Where should the downloaded and encoded files be stored?
     "youtubeVideoQuality": "highest",       // What video quality should be used?
     "queueParallelism": 2,                  // How many parallel downloads/encodes should be started?
-    "progressTimeout": 2000                 // How long should be the interval of the progress reports
+    "progressTimeout": 2000,                // How long should be the interval of the progress reports
+    "startTime": '2:214.500',               // Start point to trim video as timestamp string
+    "endTime": '3:214.500',                 // End point to trim video as timestamp string
+    "title": 'Song title',                  // Pass in song title
+    "artist": 'Artist Name'                 // Pass in artist name
 });
 
 //Download video and save as MP3 file
@@ -123,7 +127,11 @@ var Downloader = function() {
         "outputPath": "/path/to/mp3/folder",    // Where should the downloaded and encoded files be stored?
         "youtubeVideoQuality": "highest",       // What video quality should be used?
         "queueParallelism": 2,                  // How many parallel downloads/encodes should be started?
-        "progressTimeout": 2000                 // How long should be the interval of the progress reports
+        "progressTimeout": 2000,                // How long should be the interval of the progress reports
+        "startTime": '2:214.500',               // Start point to trim video as timestamp string
+        "endTime": '3:214.500',                 // End point to trim video as timestamp string
+        "title": 'Song title',                  // Pass in song title
+        "artist": 'Artist Name'                 // Pass in artist name
     });
 
 	self.callbacks = {};
